@@ -36,6 +36,7 @@ test("renders a <p> element", () => {
 
 test("renders a <img> element with the correct attributes", () => {
   render(<About />);
+  const testImage = 'https://example.com/test-image.jpg';
 
   // Find an element with the "alt" attribute set to "I made this"
   const img = screen.queryByAltText("I made this");
